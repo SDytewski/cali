@@ -1,3 +1,20 @@
+
+var queryURL= "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch=Craig+Noone&format=json"
+
+$.ajax({
+  url: queryURL,
+
+	data: { action:'query', format:'json' },
+        
+  dataType: 'json',
+  method: "GET"
+}).then(function (response) {
+  console.log(response);
+});
+
+
+
+
 var chart = am4core.create("chartdiv", am4maps.MapChart);
 
 // Set map definition
