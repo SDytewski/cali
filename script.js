@@ -1,12 +1,23 @@
 
 //getting our JSON data from Wikipedia
+var where = [
+{ county: "Yolo%20County"},
+ {county: "Colusa%20County"}
+]
 
-var queryURL= "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=Yolo%20County";
+
+
+
+var CalCounty;
+
+
+
+var queryURL= "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+
 $.ajax({
   url: queryURL,
-
 	data: { action:'query', format:'json' },
-        
+    
   dataType: 'json',
   method: "GET"
 }).then(function (response) {
@@ -15,10 +26,7 @@ $.ajax({
   let content = page[pageId].extract
   console.log(content);
 
-  document.getElementById('county-text').innerHTML = content;
-});
-
-
+  
 
 
 
@@ -69,6 +77,31 @@ polygonTemplate.events.on("hit", function(ev) {
  
 
  console.log(ev.target.cloneId);
+
+
+
+
+ if(ev.target.cloneId == "clone-id-157"){
+ 
+  
+  CalCounty = where[0].county;
+
+  
+  document.getElementById('county-text').innerHTML = content;
+
+  
+
+
+}
+
+if(ev.target.cloneId == "clone-id-361"){
+
+
+  document.getElementById('county-text').innerHTML = content;
+
+
+
+}
 
 
 // Butte
@@ -365,7 +398,7 @@ polygonTemplate.events.on("hit", function(ev) {
 // }
 
 
-
+});
 
 
 
