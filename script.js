@@ -1,36 +1,4 @@
 
-//getting our JSON data from Wikipedia
-var where = [
-{ county: "Yolo%20County"},
- {county: "Colusa%20County"}
-]
-
-
-
-
-var CalCounty;
-
-
-
-var queryURL= "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
-
-$.ajax({
-  url: queryURL,
-	data: { action:'query', format:'json' },
-    
-  dataType: 'json',
-  method: "GET"
-}).then(function (response) {
-  let page = response.query.pages;
-  let pageId = Object.keys(response.query.pages)[0];
-  let content = page[pageId].extract
-  console.log(content);
-
-  
-
-
-
-
 var chart = am4core.create("chartdiv", am4maps.MapChart);
 
 // Set map definition
@@ -84,24 +52,49 @@ polygonTemplate.events.on("hit", function(ev) {
  if(ev.target.cloneId == "clone-id-157"){
  
   
-  CalCounty = where[0].county;
+  CalCounty = "Yolo%20County"
 
   
-  document.getElementById('county-text').innerHTML = content;
-
-  
-
+ 
 
 }
 
 if(ev.target.cloneId == "clone-id-361"){
 
 
-  document.getElementById('county-text').innerHTML = content;
+  CalCounty = "Colusa%20County"
 
 
 
 }
+
+
+
+
+
+//getting our JSON data from Wikipedia
+
+
+var CalCounty;
+
+
+
+var queryURL= "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+
+$.ajax({
+  url: queryURL,
+	data: { action:'query', format:'json' },
+    
+  dataType: 'json',
+  method: "GET"
+}).then(function (response) {
+  let page = response.query.pages;
+  let pageId = Object.keys(response.query.pages)[0];
+  let content = page[pageId].extract
+  console.log(content);
+  document.getElementById('county-text').innerHTML = content;
+
+  
 
 
 // Butte
