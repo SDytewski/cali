@@ -53,8 +53,6 @@ polygonTemplate.events.on("hit", function(ev) {
  
   
   CalCounty = "Yolo%20County"
-
-  
  
 
 }
@@ -72,29 +70,83 @@ if(ev.target.cloneId == "clone-id-361"){
 
 
 
+
+
+
+
+
+
+
 //getting our JSON data from Wikipedia
 
 
 var CalCounty;
 
 
+// old wAY
 
-var queryURL= "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=images|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+
+var queryURL2 = "https://cors-anywhere.herokuapp.com/http://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url&generator=images&titles=UC%20Davis"
+
+
+
+
+
 
 $.ajax({
   url: queryURL,
 	data: { action:'query', format:'json' },
     
   dataType: 'json',
-  method: "GET"
+  method: "GET",
 }).then(function (response) {
-  let page = response.query.pages;
+  let page = response.query.pages
+  let page2 = response
+  //  let pic = response.continue.imcontinue
+
   let pageId = Object.keys(response.query.pages)[0];
   let content = page[pageId].extract
-  console.log(content);
+  console.log();
+  // console.log(page2)
   document.getElementById('county-text').innerHTML = content;
+  //  document.getElementById('information').innerHTML = '<img src ='+pic+ "/>";
 
-  
+});
+
+
+// Second ONE
+
+
+$.ajax({
+  url: queryURL2,
+	data: { action:'query', format:'json' },
+    
+  dataType: 'json',
+  method: "GET"
+}).then(function (response) {
+  // let pageB = response.query.pages
+  let pageB2 = response
+  //  let pic = response.continue.imcontinue
+
+  // let pageIdB = Object.keys(response.query.pages)[0];
+  // let contentB = pageB[pageIdB].imageinfo[0].url
+  // console.log(contentB);
+  console.log(pageB2)
+  // document.getElementById('county-text').innerHTML = content;
+  //  document.getElementById('information').innerHTML = '<img src ='+ contentB + ">";
+
+});
+
+
+
+
+}, );   
+
+
+
+
+
 
 
 // Butte
@@ -391,11 +443,7 @@ $.ajax({
 // }
 
 
-});
 
-
-
-}, );   
 
 
 
