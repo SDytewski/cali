@@ -87,7 +87,7 @@ var CalCounty;
 
 var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=images|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
 
-var queryURL2 = "https://cors-anywhere.herokuapp.com/http://en.wikipedia.org/w/api.php?action=query&prop=imageinfo&iiprop=url&generator=images&titles=UC%20Davis"
+var queryURL2 = "https://cors-anywhere.herokuapp.com/http://en.wikipedia.org/w/api.php?action=query&titles=File:Yolo%20County%20Courthouse.jpg&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
 
 
 
@@ -125,16 +125,16 @@ $.ajax({
   dataType: 'json',
   method: "GET"
 }).then(function (response) {
-  // let pageB = response.query.pages
+   let pageB = response.query.pages
   let pageB2 = response
   //  let pic = response.continue.imcontinue
 
-  // let pageIdB = Object.keys(response.query.pages)[0];
-  // let contentB = pageB[pageIdB].imageinfo[0].url
+  let pageIdB = Object.keys(response.query.pages)[0];
+  let contentB = pageB[pageIdB].imageinfo[0].url
   // console.log(contentB);
-  console.log(pageB2)
+  console.log(contentB)
   // document.getElementById('county-text').innerHTML = content;
-  //  document.getElementById('information').innerHTML = '<img src ='+ contentB + ">";
+   document.getElementById('information').innerHTML = '<img src ='+ contentB + ">";
 
 });
 
