@@ -1,3 +1,5 @@
+var CalCounty;
+var CalPic;
 
 var chart = am4core.create("chartdiv", am4maps.MapChart);
 
@@ -52,7 +54,8 @@ polygonTemplate.events.on("hit", function(ev) {
  if(ev.target.cloneId == "clone-id-157"){
  
   
-  CalCounty = "Yolo%20County"
+  CalCounty = "Yolo%20County";
+  CalPic = "Yolo%20County%20Courthouse.jpg"
  
 
 }
@@ -60,7 +63,10 @@ polygonTemplate.events.on("hit", function(ev) {
 if(ev.target.cloneId == "clone-id-361"){
 
 
-  CalCounty = "Colusa%20County"
+  CalCounty = "Colusa%20County";
+  CalPic = "Bear%20Creek%20(Colusa%20County).jpg";
+
+  // Bear_Creek_(Colusa_County).jpg
 
 
 
@@ -80,14 +86,14 @@ if(ev.target.cloneId == "clone-id-361"){
 //getting our JSON data from Wikipedia
 
 
-var CalCounty;
+
 
 
 // old wAY
 
 var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=images|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
 
-var queryURL2 = "https://cors-anywhere.herokuapp.com/http://en.wikipedia.org/w/api.php?action=query&titles=File:Yolo%20County%20Courthouse.jpg&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
+var queryURL2 = "https://cors-anywhere.herokuapp.com/http://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
 
 
 
