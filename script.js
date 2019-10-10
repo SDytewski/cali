@@ -48,9 +48,35 @@ polygonTemplate.events.on("hit", function(ev) {
 
  console.log(ev.target.cloneId);
 
+// Colusa
+ if(ev.target.cloneId == "clone-id-361"){
+
+  CalCounty = "Colusa%20County";
+  CalPic = "Bear%20Creek%20(Colusa%20County).jpg";
+
+  // Bear_Creek_(Colusa_County).jpg
+
+}
 
 
+//Glenn
+if(ev.target.cloneId == "clone-id-341"){
+  
+  CalCounty = "Glenn%20County";
+  CalPic = "Northbound%20Interstate%205%20California.jpg";
+ 
+ }
 
+// Tehama
+if(ev.target.cloneId == "clone-id-177"){
+ 
+  CalCounty = "Tehama%20County";
+  CalPic = "Ishi%20Wilderness.jpg";
+ 
+}
+
+
+//Yolo
  if(ev.target.cloneId == "clone-id-157"){
  
   
@@ -60,17 +86,7 @@ polygonTemplate.events.on("hit", function(ev) {
 
 }
 
-if(ev.target.cloneId == "clone-id-361"){
 
-
-  CalCounty = "Colusa%20County";
-  CalPic = "Bear%20Creek%20(Colusa%20County).jpg";
-
-  // Bear_Creek_(Colusa_County).jpg
-
-
-
-}
 
 
 
