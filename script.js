@@ -17,7 +17,7 @@ chart.geodata.features[1].properties.population = "220,408" ; //yolo
 chart.geodata.features[2].properties.population = "854,223"; //ventura
 
 
-console.log(chart.geodata.features[1].properties)
+// console.log(chart.geodata.features[1].properties)
 // console.log(chart.geodata.features[2].properties);
 
 console.log(chart);
@@ -54,9 +54,22 @@ polygonTemplate.events.on("hit", function(ev) {
   CalCounty = "Colusa%20County";
   CalPic = "Bear%20Creek%20(Colusa%20County).jpg";
 
-  // Bear_Creek_(Colusa_County).jpg
+  
 
 }
+
+
+ //  Lake
+ if(ev.target.cloneId == "clone-id-317"){
+
+  
+  CalCounty = "Lake%20County,%20California";
+  Calpic = "Bear%20Creek%20(Colusa%20County).jpg";
+ 
+
+
+}
+
 
 
 //Glenn
@@ -66,6 +79,18 @@ if(ev.target.cloneId == "clone-id-341"){
   CalPic = "Northbound%20Interstate%205%20California.jpg";
  
  }
+
+//Mendocino
+
+  if(ev.target.cloneId == "clone-id-293"){
+  
+     
+  CalCounty = "Mendocino%20County";
+  CalPic = "Mendocino%20California.jpg";
+ 
+
+}
+
 
 // Tehama
 if(ev.target.cloneId == "clone-id-177"){
@@ -147,8 +172,8 @@ $.ajax({
   dataType: 'json',
   method: "GET"
 }).then(function (response) {
-   let pageB = response.query.pages
-  let pageB2 = response
+   let pageB = response.query.pages;
+  // let pageB2 = response
   //  let pic = response.continue.imcontinue
 
   let pageIdB = Object.keys(response.query.pages)[0];
