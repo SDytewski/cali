@@ -67,7 +67,6 @@ polygonTemplate.events.on("hit", function(ev) {
   Calpic = "Bear%20Creek%20(Colusa%20County).jpg";
  
 
-
 }
 
 
