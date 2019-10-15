@@ -64,9 +64,8 @@ polygonTemplate.events.on("hit", function(ev) {
 
   
   CalCounty = "Lake%20County,%20California";
-  Calpic = "Bear%20Creek%20(Colusa%20County).jpg";
+  CalPic = "Clear%20Lake%20Ca%20-%20panoramio.jpg";
  
-
 }
 
 
@@ -98,6 +97,18 @@ if(ev.target.cloneId == "clone-id-177"){
   CalPic = "Ishi%20Wilderness.jpg";
  
 }
+
+  // Trinity
+
+  if(ev.target.cloneId == "clone-id-173"){
+  
+    CalCounty = "Trinity%20County,%20California";
+   CalPic = "Trinity%20County%20Mountains%20(California).jpg";
+   
+   }  
+
+
+
 
 
 //Yolo

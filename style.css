@@ -1,7 +1,7 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,255,255,1) 35%, rgb(144, 203, 214) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,255,255,1) 35%, rgb(144, 203, 214) 100%);
   }
 
   .flex-container {
@@ -25,68 +25,61 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,255,255,1) 35%, r
     flex: 1;
   }
   
-  #chartdiv {
-    /* margin-top: 90px; */
-    height: 600px;
-    /* flex-grow: 2; */
-    /* margin-left: -230px; */
-    margin-left: 80px;
 
-  
-    
-  
-    
-  }
-  
-  #information img {
-    width: 250px;
-    height: 250px;
-    margin-top: 100px;
-    position: relative;
-    /* margin-left: 50px; */
-
-
-  }
-
-  #county-text{
-    /* margin-left: -10px; */
-    margin-left: 20px;
-    width: 50%;
-    /* flex-grow: -3; */
-    text-align: center;
-   align-items: center;
-   padding-left: 70px;
-   margin-top: -15px;
-
-  }
 
   #ffffff{
     width: 20%;
 
+  }
+
+
+  h1 { 
+    font-size: 50px;
 
   }
-/* 
-  #headline {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-  } */
 
-  #headline {
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+   
+    #county-text{
+      /* margin-left: -10px; */
+      margin-left: 20px;
+      width: 50%;
+      /* flex-grow: -3; */
+      text-align: center;
+     align-items: center;
+     padding-left: 70px;
+     margin-top: -15px;
   
-    flex-grow: 2;
-   width: 100%;
+    }
+    #chartdiv {
+      /* margin-top: 90px; */
+      height: 500px;
+      /* flex-grow: 2; */
+      /* margin-left: -230px; */
+      margin-left: 80px;
+  
+       
+    }
+    
+    #headline {
+     flex-grow: 2;
+     width: 100%;
+    justify-content: center;
+    text-align: center;
+  
+    }
+
+    #information img {
+      width: 250px;
+      height: 250px;
+      position: relative;
+      /* margin-left: 50px; */
  
-  justify-content: center;
-  
-  text-align: center;
+    }
 
-  }
 
-  h1 { font-size: 50px;
+
+
 
   }
