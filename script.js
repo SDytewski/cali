@@ -89,6 +89,17 @@ if(ev.target.cloneId == "clone-id-341"){
 
 }
 
+// Sonoma
+  if(ev.target.cloneId == "clone-id-189"){
+  
+    CalCounty = "Sonoma%20County";
+    CalPic ="Lake%20Sonoma%20Sunset.jpg";
+
+
+  }
+
+
+
 
 // Tehama
 if(ev.target.cloneId == "clone-id-177"){
