@@ -78,6 +78,15 @@ if(ev.target.cloneId == "clone-id-341"){
  
  }
 
+
+ // Humboldt
+ if(ev.target.cloneId == "clone-id-337"){
+  
+  CalCounty = "Humboldt%20County,%20California";
+   CalPic = "Carson%20Mansion%20and%20Eureka%20Public%20Library.jpg";
+  
+ }
+
 //Mendocino
 
   if(ev.target.cloneId == "clone-id-293"){
