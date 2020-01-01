@@ -109,7 +109,7 @@ if(ev.target.cloneId == "clone-id-341"){
 
 
 
-// Tehama County
+// Tehama 
 if(ev.target.cloneId == "clone-id-177"){
  
   CalCounty = "Tehama%20County";
