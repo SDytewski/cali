@@ -80,7 +80,7 @@ if(ev.target.cloneId == "clone-id-341"){
 
 
  // Humboldt
- if(ev.target.cloneId == "clone-id-337"){
+  if(ev.target.cloneId == "clone-id-337"){
   
   CalCounty = "Humboldt%20County,%20California";
    CalPic = "Carson%20Mansion%20and%20Eureka%20Public%20Library.jpg";
@@ -88,7 +88,6 @@ if(ev.target.cloneId == "clone-id-341"){
  }
 
 //Mendocino
-
   if(ev.target.cloneId == "clone-id-293"){
   
      
@@ -110,7 +109,7 @@ if(ev.target.cloneId == "clone-id-341"){
 
 
 
-// Tehama
+// Tehama County
 if(ev.target.cloneId == "clone-id-177"){
  
   CalCounty = "Tehama%20County";
@@ -119,11 +118,10 @@ if(ev.target.cloneId == "clone-id-177"){
 }
 
   // Trinity
-
-  if(ev.target.cloneId == "clone-id-173"){
+if(ev.target.cloneId == "clone-id-173"){
   
-    CalCounty = "Trinity%20County,%20California";
-   CalPic = "Trinity%20County%20Mountains%20(California).jpg";
+  CalCounty = "Trinity%20County,%20California";
+  CalPic = "Trinity%20County%20Mountains%20(California).jpg";
    
    }  
 
