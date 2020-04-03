@@ -162,7 +162,7 @@ if(ev.target.cloneId == "clone-id-173"){
 
 var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=images|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
 
-var queryURL2 = "https://cors-anywhere.herokuapp.com/http://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
+var queryURL2 = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
 
 
 
