@@ -87,6 +87,16 @@ if(ev.target.cloneId == "clone-id-341"){
   
  }
 
+// Marin
+if(ev.target.cloneId == "clone-id-301"){
+  
+  CalCounty = "Marin%20County";
+   CalPic = "Dillon_Beach%2C_CA_in_Marin_County.jpg";
+  
+ }
+
+
+
 //Mendocino
   if(ev.target.cloneId == "clone-id-293"){
   
