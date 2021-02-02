@@ -59,6 +59,16 @@ polygonTemplate.events.on("hit", function(ev) {
 }
 
 
+ //  Del Norte
+ if(ev.target.cloneId == "clone-id-353"){
+
+  
+  CalCounty = "Del%20Norte%20County,%20California";
+  CalPic = "JEDEDIAH_SMITH_COVERED_BRIDGE%2C_DEL_NORTE_CTY%2C_CALIFORNIA.jpg";
+ 
+}
+
+
  //  Lake
  if(ev.target.cloneId == "clone-id-317"){
 
@@ -106,6 +116,28 @@ if(ev.target.cloneId == "clone-id-301"){
  
 
 }
+
+//Modoc
+if(ev.target.cloneId == "clone-id-285"){
+  
+     
+  CalCounty = "Modoc%20County";
+  CalPic = "Alturas_California_1975.jpg";
+ 
+
+}
+
+
+//Siskiyou
+
+if(ev.target.cloneId == "clone-id-197"){
+  
+  CalCounty = "Siskiyou%20County";
+  CalPic ="Mount_Shasta_8-4-2007.jpg";
+
+
+}
+
 
 // Sonoma
   if(ev.target.cloneId == "clone-id-189"){
