@@ -128,12 +128,24 @@ if(ev.target.cloneId == "clone-id-285"){
 }
 
 
+//Shasta
+
+if(ev.target.cloneId == "clone-id-205"){
+  
+  CalCounty = "Shasta%20County";
+  CalPic ="Lake_shasta.triddle.jpg";
+
+
+}
+
+
+
 //Siskiyou
 
 if(ev.target.cloneId == "clone-id-197"){
   
   CalCounty = "Siskiyou%20County";
-  CalPic ="Mount_Shasta_8-4-2007.jpg";
+  CalPic ="Siskiyou_County%2C_CA%2C_USA_-_panoramio_%284%29.jpg";
 
 
 }
