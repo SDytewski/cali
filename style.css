@@ -1,85 +1,107 @@
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,255,255,1) 35%, rgb(144, 203, 214) 100%);
-  }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(224,255,255,1) 35%, rgb(144, 203, 214) 100%);
+}
 
-  .flex-container {
-    display: flex;
-    flex-direction: row;
-    
-  }
-
-
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
+.flex-container {
+  display: flex;
+  flex-direction: row;
   
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-  
+}
 
 
-  #ffffff{
-    width: 20%;
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
 
-  }
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
 
 
-  h1 { 
-    font-size: 50px;
 
-  }
+#ffffff{
+  width: 20%;
 
-  @media only screen and (min-width: 768px) {
-    /* For desktop: */
-   
-    #county-text{
-      /* margin-left: -10px; */
-      margin-left: 20px;
-      width: 50%;
-      /* flex-grow: -3; */
-      text-align: center;
-     align-items: center;
-     padding-left: 70px;
-     margin-top: -15px;
-  
-    }
-    #chartdiv {
-      /* margin-top: 90px; */
-      height: 500px;
-      /* flex-grow: 2; */
-      /* margin-left: -230px; */
-      margin-left: 80px;
-  
-       
-    }
-    
-    #headline {
-     flex-grow: 2;
-     width: 100%;
-    justify-content: center;
-    text-align: center;
-  
-    }
+}
 
-    #information img {
-      width: 250px;
-      height: 250px;
-      position: relative;
-      /* margin-left: 50px; */
+
+h1 { 
+  font-size: 30px;
  
-    }
+}
 
+/* everything over 768px */
 
-
-
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+ 
+  #county-text{
+    /* margin-left: -10px; */
+    margin-left: 20px;
+    width: 50%;
+    /* flex-grow: -3; */
+    text-align: center;
+   align-items: center;
+   padding-left: 70px;
+   margin-top: -15px;
 
   }
+  #chartdiv {
+    /* margin-top: 90px; */
+    height: 500px;
+    /* flex-grow: 2; */
+    /* margin-left: -230px; */
+    margin-left: 80px;
+    /* display: none; */
+     
+  }
+  
+  #headline {
+   flex-grow: 2;
+   width: 100%;
+  justify-content: center;
+  text-align: center;
+
+  }
+
+  #information img {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    /* margin-left: 50px; */
+
+  }
+
+
+
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+  
+
+  .headline {
+
+    
+
+  }
+
+  .flex-container .row  {
+
+    flex-direction: column;
+
+  }
+
+
+
+
+}
