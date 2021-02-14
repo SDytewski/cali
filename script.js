@@ -228,7 +228,7 @@ $.ajax({
 	data: { action:'query', format:'json' },
     
   dataType: 'json',
-  method: "GET",
+  method: "get",
 }).then(function (response) {
   let page = response.query.pages
   let page2 = response
