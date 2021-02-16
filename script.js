@@ -48,6 +48,17 @@ polygonTemplate.events.on("hit", function(ev) {
 
  console.log(ev.target.cloneId);
 
+
+ // Butte
+ if(ev.target.cloneId == "clone-id-369"){
+
+  CalCounty = "Butte%20County,%20California";
+  CalPic = "Feather_River%2C_Butte_County%2C_California.jpg";
+
+  
+
+}
+
 // Colusa
  if(ev.target.cloneId == "clone-id-361"){
 
@@ -97,6 +108,15 @@ if(ev.target.cloneId == "clone-id-341"){
   
  }
 
+
+ // Lassen
+ if(ev.target.cloneId == "clone-id-313"){
+  
+  CalCounty = "Lassen%20County,%20California";
+   CalPic = "Crystal_peak_20200520_%2801%29.jpg";
+  
+ }
+
 // Marin
 if(ev.target.cloneId == "clone-id-301"){
   
@@ -127,6 +147,17 @@ if(ev.target.cloneId == "clone-id-285"){
 
 }
 
+//Plumas
+
+if(ev.target.cloneId == "clone-id-257"){
+  
+     
+  CalCounty = "Plumas%20County";
+  CalPic = "Fall_Colors_along_Hwy_89_Plumas_County_%286263493591%29.jpg";
+ 
+
+}
+
 
 //Shasta
 
@@ -134,6 +165,17 @@ if(ev.target.cloneId == "clone-id-205"){
   
   CalCounty = "Shasta%20County";
   CalPic ="Lake_shasta.triddle.jpg";
+
+
+}
+
+
+//Sierra
+
+if(ev.target.cloneId == "clone-id-201"){
+  
+  CalCounty = "Sierra%20County,%20California";
+  CalPic ="Loyalton%2C_California_Fire_Tornado-2020-08-16.jpg";
 
 
 }
