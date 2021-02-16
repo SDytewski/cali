@@ -147,6 +147,16 @@ if(ev.target.cloneId == "clone-id-285"){
 
 }
 
+//Nevada
+if(ev.target.cloneId == "clone-id-269"){
+  
+     
+  CalCounty = "Nevada%20County,%20California";
+  CalPic = "Flood_under_the_Old_Route_49_bridge_crossing_over_the_South_Yuba_River_in_Nevada_City%2C_California.jpg";
+ 
+
+}
+
 //Placer
 if(ev.target.cloneId == "clone-id-261"){
   
