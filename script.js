@@ -147,6 +147,16 @@ if(ev.target.cloneId == "clone-id-285"){
 
 }
 
+//Placer
+if(ev.target.cloneId == "clone-id-261"){
+  
+     
+  CalCounty = "Placer%20County";
+  CalPic = "Auburn_-_California_October_2013_-_Miner.JPG";
+ 
+
+}
+
 //Plumas
 
 if(ev.target.cloneId == "clone-id-257"){
