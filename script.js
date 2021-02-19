@@ -256,6 +256,16 @@ if(ev.target.cloneId == "clone-id-173"){
 }
 
 
+//Yuba
+if(ev.target.cloneId == "clone-id-153"){
+ 
+  
+  CalCounty = "Yuba%20County";
+  CalPic = "MarysvilleEllisLake.jpg"
+ 
+
+}
+
 
 
 
