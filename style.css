@@ -86,20 +86,17 @@ body {
   
   #headline {
  
-    background-color: rgb(175, 129, 43);
    flex-grow: 2;
    width: 100%;
   justify-content: center;
   text-align: center;
   /* padding-bottom: 50px; */
-  box-shadow: 5px 10px 10px 5px grey;
-
-    
-    -webkit-text-stroke: 2.5px rgb(216, 198, 166);
-    font-size: 2.3em;
-    /* background: -webkit-linear-gradient(#eee, rgb(245, 121, 5)); */
-   
-    -webkit-text-fill-color: transparent;
+ 
+  color: #e67d37;
+  font-family: 'Trocchi', serif;
+  
+  -webkit-text-stroke: 2px black; /* width and color */
+  -webkit-text-fill-color: none;
     
     
    
@@ -140,6 +137,12 @@ body {
 @media only screen and (max-width: 767px) {
 
 
+  h1 { font-size: 25px;
+
+
+  }
+
+
   #information img {
     display: block;
     margin-left: auto;
@@ -159,15 +162,32 @@ body {
   }
 
 
-  #county-text {
+  /* #county-text {
 
     background-color: #ebc58e;
     border-radius: 25px;
     padding: 8px;
     font-weight: 500;
     border:2px black solid; 
-  }
+  } */
+
+  #county-text{
+    /* margin-left: -10px; */
+    padding-top: 20px;
+    margin-left: 20px;
+    width: 50%;
+    /* flex-grow: -3; */
+    text-align: center;
+   align-items: center;
+   padding: 10px;
   
+   background-color: #ebc58e;
+   border-radius: 25px;
+   font-weight: 500;
+   border:2px black solid; 
+
+  }
+
   #headline {
 
     color: #e67d37;
@@ -179,7 +199,7 @@ body {
 
     
     
-  font-size: 2.3em;
+  
   /* background: -webkit-linear-gradient(#eee, rgb(245, 121, 5)); */
  
 
