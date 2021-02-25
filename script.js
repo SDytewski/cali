@@ -46,234 +46,10 @@ hs.properties.fill = am4core.color("#367B25");
 polygonTemplate.events.on("hit", function(ev) {
  
 
+CalCounty = ev.target.dataItem.dataContext.name + ' County, California'
+
  console.log(ev.target.cloneId);
-
-
- // Butte
- if(ev.target.cloneId == "clone-id-369"){
-
-  CalCounty = "Butte%20County,%20California";
-  CalPic = "Feather_River%2C_Butte_County%2C_California.jpg";
-
-  
-
-}
-
-// Colusa
- if(ev.target.cloneId == "clone-id-361"){
-
-  CalCounty = "Colusa%20County";
-  CalPic = "Bear%20Creek%20(Colusa%20County).jpg";
-
-  
-
-}
-
-
- //  Del Norte
- if(ev.target.cloneId == "clone-id-353"){
-
-  
-  CalCounty = "Del%20Norte%20County,%20California";
-  CalPic = "JEDEDIAH_SMITH_COVERED_BRIDGE%2C_DEL_NORTE_CTY%2C_CALIFORNIA.jpg";
- 
-}
-
-
- //  Lake
- if(ev.target.cloneId == "clone-id-317"){
-
-  
-  CalCounty = "Lake%20County,%20California";
-  CalPic = "Clear%20Lake%20Ca%20-%20panoramio.jpg";
- 
-}
-
-
-
-//Glenn
-if(ev.target.cloneId == "clone-id-341"){
-  
-  CalCounty = "Glenn%20County";
-  CalPic = "Northbound%20Interstate%205%20California.jpg";
- 
- }
-
-
- // Humboldt
-  if(ev.target.cloneId == "clone-id-337"){
-  
-  CalCounty = "Humboldt%20County,%20California";
-   CalPic = "Carson%20Mansion%20and%20Eureka%20Public%20Library.jpg";
-  
- }
-
-
- // Lassen
- if(ev.target.cloneId == "clone-id-313"){
-  
-  CalCounty = "Lassen%20County,%20California";
-   CalPic = "Crystal_peak_20200520_%2801%29.jpg";
-  
- }
-
-// Marin
-if(ev.target.cloneId == "clone-id-301"){
-  
-  CalCounty = "Marin%20County";
-   CalPic = "Dillon_Beach%2C_CA_in_Marin_County.jpg";
-  
- }
-
-
-
-//Mendocino
-  if(ev.target.cloneId == "clone-id-293"){
-  
-     
-  CalCounty = "Mendocino%20County";
-  CalPic = "Mendocino%20California.jpg";
- 
-
-}
-
-//Modoc
-if(ev.target.cloneId == "clone-id-285"){
-  
-     
-  CalCounty = "Modoc%20County";
-  CalPic = "Alturas_California_1975.jpg";
- 
-
-}
-
-//Nevada
-if(ev.target.cloneId == "clone-id-269"){
-  
-     
-  CalCounty = "Nevada%20County,%20California";
-  CalPic = "Flood_under_the_Old_Route_49_bridge_crossing_over_the_South_Yuba_River_in_Nevada_City%2C_California.jpg";
- 
-
-}
-
-//Placer
-if(ev.target.cloneId == "clone-id-261"){
-  
-     
-  CalCounty = "Placer%20County";
-  CalPic = "Auburn_-_California_October_2013_-_Miner.JPG";
- 
-
-}
-
-//Plumas
-
-if(ev.target.cloneId == "clone-id-257"){
-  
-     
-  CalCounty = "Plumas%20County";
-  CalPic = "Fall_Colors_along_Hwy_89_Plumas_County_%286263493591%29.jpg";
- 
-
-}
-
-
-//Shasta
-
-if(ev.target.cloneId == "clone-id-205"){
-  
-  CalCounty = "Shasta%20County";
-  CalPic ="Lake_shasta.triddle.jpg";
-
-
-}
-
-
-//Sierra
-
-if(ev.target.cloneId == "clone-id-201"){
-  
-  CalCounty = "Sierra%20County,%20California";
-  CalPic ="Loyalton%2C_California_Fire_Tornado-2020-08-16.jpg";
-
-
-}
-
-
-
-//Siskiyou
-
-if(ev.target.cloneId == "clone-id-197"){
-  
-  CalCounty = "Siskiyou%20County";
-  CalPic ="Siskiyou_County%2C_CA%2C_USA_-_panoramio_%284%29.jpg";
-
-
-}
-
-
-// Sonoma
-  if(ev.target.cloneId == "clone-id-189"){
-  
-    CalCounty = "Sonoma%20County";
-    CalPic ="Lake%20Sonoma%20Sunset.jpg";
-
-
-  }
-
-
-
-
-// Tehama 
-if(ev.target.cloneId == "clone-id-177"){
- 
-  CalCounty = "Tehama%20County";
-  CalPic = "Ishi%20Wilderness.jpg";
- 
-}
-
-  // Trinity
-if(ev.target.cloneId == "clone-id-173"){
-  
-  CalCounty = "Trinity%20County,%20California";
-  CalPic = "Trinity%20County%20Mountains%20(California).jpg";
-   
-   }  
-
-
-
-
-
-//Yolo
- if(ev.target.cloneId == "clone-id-157"){
- 
-  
-  CalCounty = "Yolo%20County";
-  CalPic = "Yolo%20County%20Courthouse.jpg"
- 
-
-}
-
-
-//Yuba
-if(ev.target.cloneId == "clone-id-153"){
- 
-  
-  CalCounty = "Yuba%20County";
-  CalPic = "MarysvilleEllisLake.jpg"
- 
-
-}
-
-
-
-
-
-
-
-
-
+ console.log(CalCounty);
 
 
 
@@ -286,10 +62,9 @@ if(ev.target.cloneId == "clone-id-153"){
 
 // old wAY
 
-var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&prop=images|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&piprop=original&prop=pageimages|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
 
-var queryURL2 = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
-
+// var queryURL2 = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
 
 
 
@@ -297,10 +72,10 @@ var queryURL2 = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/
 
 $.ajax({
   url: queryURL,
-	data: { action:'query', format:'json' },
+  data: { action:'query', format:'json' },
     
   dataType: 'json',
-  method: "get",
+  method: "GET",
 }).then(function (response) {
   let page = response.query.pages
   let page2 = response
@@ -308,9 +83,12 @@ $.ajax({
 
   let pageId = Object.keys(response.query.pages)[0];
   let content = page[pageId].extract
-  console.log();
+  let image = page[pageId].original.source
+
+  // console.log();
   // console.log(page2)
   document.getElementById('county-text').innerHTML = content;
+  document.getElementsByTagName('body')[0].style.backgroundImage = 'url(' + image + ')';
   //  document.getElementById('information').innerHTML = '<img src ='+pic+ "/>";
 
 });
@@ -319,25 +97,25 @@ $.ajax({
 // Second ONE
 
 
-$.ajax({
-  url: queryURL2,
-	data: { action:'query', format:'json' },
+// $.ajax({
+//   url: queryURL2,
+//  data: { action:'query', format:'json' },
     
-  dataType: 'json',
-  method: "GET"
-}).then(function (response) {
-   let pageB = response.query.pages;
-  // let pageB2 = response
-  //  let pic = response.continue.imcontinue
+//   dataType: 'json',
+//   method: "GET"
+// }).then(function (response) {
+//    let pageB = response.query.pages;
+//   // let pageB2 = response
+//   //  let pic = response.continue.imcontinue
 
-  let pageIdB = Object.keys(response.query.pages)[0];
-  let contentB = pageB[pageIdB].imageinfo[0].url
-  // console.log(contentB);
-  console.log(contentB)
-  // document.getElementById('county-text').innerHTML = content;
-   document.getElementById('information').innerHTML = '<img src ='+ contentB + ">";
+//   let pageIdB = Object.keys(response.query.pages)[0];
+//   let contentB = pageB[pageIdB].imageinfo[0].url
+//   // console.log(contentB);
+//   console.log(contentB)
+//   // document.getElementById('county-text').innerHTML = content;
+   
 
-});
+// });
 
 
 
@@ -656,4 +434,3 @@ $.ajax({
 // }
 
 // _dispoers:   cloneId: "clone-id-242"
-
