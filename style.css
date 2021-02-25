@@ -29,6 +29,7 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+ 
 }
 
 
@@ -142,8 +143,15 @@ body {
 
   }
 
+  .column {
 
-  #information img {
+    justify-content: center;
+  
+    align-items: center; 
+  }
+
+
+  /* #information img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -156,10 +164,10 @@ body {
     border: 3px solid rgb(70, 74, 107);
     box-shadow: 10px 10px 5px grey;
     
-    /* margin-left: 50px; */
+
    
 
-  }
+  } */
 
 
   /* #county-text {
