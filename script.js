@@ -62,7 +62,7 @@ CalCounty = ev.target.dataItem.dataContext.name + ' County, California'
 
 // old wAY
 
-var queryURL="https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?format=json&action=query&piprop=original&prop=pageimages|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+var queryURL="http://localhost:8080/https://en.wikipedia.org/w/api.php?format=json&action=query&piprop=original&prop=pageimages|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
 
 // var queryURL2 = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
 
