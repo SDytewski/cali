@@ -137,6 +137,10 @@ body {
 
 @media only screen and (max-width: 767px) {
 
+/* #chardiv { height: 1000px;
+
+} */
+ 
 
   h1 { font-size: 25px;
 
@@ -146,7 +150,7 @@ body {
   .column {
 
     justify-content: center;
-  
+      
     align-items: center; 
   }
 
@@ -179,6 +183,16 @@ body {
     border:2px black solid; 
   } */
 
+
+  #chartdiv {
+    /* margin-top: 90px; */
+    height: 350px;
+    /* flex-grow: 2; */
+    /* margin-left: -230px; */
+    /* margin-left: 80px; */
+    /* display: none; */
+     
+  }
   #county-text{
     /* margin-left: -10px; */
     padding-top: 20px;
@@ -222,9 +236,14 @@ body {
   .flex-container .row  {
 
     flex-direction: column;
+    flex-grow: 2;
+    /* border: 1px dashed red; */
+    /* height: 350px; */
+
 
   }
 
+  
 
 
 
