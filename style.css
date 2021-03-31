@@ -47,10 +47,8 @@ body {
   -webkit-text-stroke: 2.5px rgb(216, 198, 166);
   font-size: 2.3em;
   /* background: -webkit-linear-gradient(#eee, rgb(245, 121, 5)); */
+
  
-  
-  
-  
  
 }
 
@@ -168,8 +166,7 @@ body {
     border: 3px solid rgb(70, 74, 107);
     box-shadow: 10px 10px 5px grey;
     
-
-   
+ 
 
   } */
 
@@ -240,11 +237,7 @@ body {
     /* border: 1px dashed red; */
     /* height: 350px; */
 
-
   }
 
-  
-
-
-
+ 
 }
