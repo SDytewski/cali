@@ -18,7 +18,6 @@ chart.geodata.features[2].properties.population = "854,223"; //ventura
 
 
 // console.log(chart.geodata.features[1].properties)
-// console.log(chart.geodata.features[2].properties);
 
 console.log(chart);
 
@@ -93,29 +92,6 @@ $.ajax({
 
 });
 
-
-// Second ONE
-
-
-// $.ajax({
-//   url: queryURL2,
-//  data: { action:'query', format:'json' },
-    
-//   dataType: 'json',
-//   method: "GET"
-// }).then(function (response) {
-//    let pageB = response.query.pages;
-//   // let pageB2 = response
-//   //  let pic = response.continue.imcontinue
-
-//   let pageIdB = Object.keys(response.query.pages)[0];
-//   let contentB = pageB[pageIdB].imageinfo[0].url
-//   // console.log(contentB);
-//   console.log(contentB)
-//   // document.getElementById('county-text').innerHTML = content;
-   
-
-// });
 
 
 
