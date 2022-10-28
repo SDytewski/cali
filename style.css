@@ -11,7 +11,7 @@ body {
 .flex-container {
   display: flex;
   flex-direction: row;
-  
+
 }
 
 
@@ -27,7 +27,7 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
- 
+
 }
 
 
@@ -38,19 +38,19 @@ body {
 }
 
 
-#headline { 
-   
+#headline {
+
   -webkit-text-stroke: 2.5px rgb(216, 198, 166);
   font-size: 2.3em;
-  
- 
+
+
 }
 
 /* everything over 768px */
 
 @media only screen and (min-width: 768px) {
   /* For desktop: */
- 
+
   #county-text{
     padding-top: 20px;
     margin-left: 20px;
@@ -58,11 +58,11 @@ body {
     text-align: center;
     align-items: center;
     padding: 10px;
-   
+
    background-color: #ebc58e;
    border-radius: 25px;
    font-weight: 500;
-   border:2px black solid; 
+   border:2px black solid;
 
   }
   #chartdiv {
@@ -72,24 +72,24 @@ body {
     /* margin-left: -230px; */
     margin-left: 80px;
     /* display: none; */
-     
+
   }
-  
+
   #headline {
- 
+
    flex-grow: 2;
    width: 100%;
   justify-content: center;
   text-align: center;
   /* padding-bottom: 50px; */
- 
+
   color: #e67d37;
   font-family: 'Trocchi', serif;
-  
+
   -webkit-text-stroke: 2px black; /* width and color */
   -webkit-text-fill-color: none;
-    
-       
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+
 
   }
 
@@ -106,17 +106,17 @@ body {
     margin-top: 15px;
     margin-left: auto;
     margin-right: auto;
-   
-    
+
+
     width: 350px;
     height: 350px;
     position: relative;
     border-radius: 13px;
     border: 3px solid rgb(70, 74, 107);
     box-shadow: 20px 20px 10px grey;
-    
+
     /* margin-left: 50px; */
-   
+
 
   }
 
@@ -125,7 +125,7 @@ body {
 
 @media only screen and (max-width: 767px) {
 
- 
+
 
   h1 { font-size: 25px;
 
@@ -135,18 +135,18 @@ body {
   .column {
 
     justify-content: center;
-      
-    align-items: center; 
+
+    align-items: center;
   }
 
 
- 
+
 
   #chartdiv {
 
     margin-top: 45px;
     height: 350px;
-        
+
   }
 
   #county-text{
@@ -161,7 +161,7 @@ body {
    background-color: #ebc58e;
    border-radius: 25px;
    font-weight: 500;
-   border:2px black solid; 
+   border:2px black solid;
 
   }
 
@@ -169,15 +169,15 @@ body {
 
     color: #e67d37;
     font-family: 'Trocchi', serif;
-    
+
     -webkit-text-stroke: 2px black; /* width and color */
     -webkit-text-fill-color: none;
-  
+
     justify-content: center;
     text-align: center;
 
   }
-  
+
 
   .flex-container .row  {
 
@@ -187,5 +187,5 @@ body {
 
   }
 
- 
+
 }
