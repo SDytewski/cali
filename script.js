@@ -61,7 +61,9 @@ CalCounty = ev.target.dataItem.dataContext.name + ' County, California'
 
 // old wAY
 
-var queryURL="https://en.wikipedia.org/w/api.php?origin=*&action=query&piprop=original&prop=pageimages|extracts&exintro&explaintext&redirects=1&titles="+ CalCounty;
+var queryURL="https://en.wikipedia.org/w/api.php?format=json&origin=*&action=query&piprop=original&prop=pageimages|extracts&exintro&explaintext&redirects=1&titles=" + CalCounty;
+
+
 
 // var queryURL2 = "https://cors-anywhere.herokuapp.com/https://en.wikipedia.org/w/api.php?action=query&titles=File:"+CalPic+"&prop=imageinfo&iilimit=50&iiend=20071231235959&iiprop=timestamp|user|url"
 
@@ -87,35 +89,55 @@ var queryURL="https://en.wikipedia.org/w/api.php?origin=*&action=query&piprop=or
 //   //  document.getElementById('information').innerHTML = '<img src ='+pic+ "/>";
 // });
 
-
-$.ajax({
-  url: queryURL,
+fetch(queryURL,
+  {
   data: { action:'query', format:'json' },
-
   dataType: 'json',
   method: "GET",
-}).then(function (response) {
-  let page = response.query.pages
-  let page2 = response
-  //  let pic = response.continue.imcontinue
-
+}).then
+  (function(res) {
+    return res.json()
+  })
+   .then(function (response) {
+     let page = response.query.pages
+     let page2 = response
   let pageId = Object.keys(response.query.pages)[0];
   let content = page[pageId].extract
   let image = page[pageId].original.source
 
-  // console.log();
-  // console.log(page2)
   document.getElementById('county-text').innerHTML = content;
   document.getElementsByTagName('body')[0].style.backgroundImage = 'url(' + image + ')';
-  //  document.getElementById('information').innerHTML = '<img src ='+pic+ "/>";
+})
+
+
+// $.ajax({
+//   url: queryURL,
+//   data: { action:'query', format:'json' },
+
+//   dataType: 'json',
+//   method: "GET",
+// }).then(function (response) {
+//   let page = response.query.pages
+//   let page2 = response
+//   //  let pic = response.continue.imcontinue
+
+//   let pageId = Object.keys(response.query.pages)[0];
+//   let content = page[pageId].extract
+//   let image = page[pageId].original.source
+
+//   // console.log();
+//   // console.log(page2)
+//   document.getElementById('county-text').innerHTML = content;
+//   document.getElementsByTagName('body')[0].style.backgroundImage = 'url(' + image + ')';
+//   //  document.getElementById('information').innerHTML = '<img src ='+pic+ "/>";
+
+// });
+
+
+
+
 
 });
-
-
-
-
-
-}, );
 
 
 
