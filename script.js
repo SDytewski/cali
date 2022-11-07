@@ -91,23 +91,23 @@ var queryURL="https://en.wikipedia.org/w/api.php?format=json&origin=*&action=que
 
 fetch(queryURL,
   {
-  data: { action:'query', format:'json' },
-  dataType: 'json',
-  method: "GET",
-}).then
+    data: { action:'query', format:'json' },
+    dataType: 'json',
+    method: "GET",
+  }).then
   (function(res) {
     return res.json()
   })
    .then(function (response) {
      let page = response.query.pages
      let page2 = response
-  let pageId = Object.keys(response.query.pages)[0];
-  let content = page[pageId].extract
-  let image = page[pageId].original.source
+     let pageId = Object.keys(response.query.pages)[0];
+     let content = page[pageId].extract
+     let image = page[pageId].original.source
+     document.getElementById('county-text').innerHTML = content;
+     document.getElementsByTagName('body')[0].style.backgroundImage = 'url(' + image + ')';
+   })
 
-  document.getElementById('county-text').innerHTML = content;
-  document.getElementsByTagName('body')[0].style.backgroundImage = 'url(' + image + ')';
-})
 
 
 // $.ajax({
@@ -132,10 +132,6 @@ fetch(queryURL,
 //   //  document.getElementById('information').innerHTML = '<img src ='+pic+ "/>";
 
 // });
-
-
-
-
 
 });
 

@@ -89,6 +89,7 @@ body {
   -webkit-text-stroke: 2px black; /* width and color */
   -webkit-text-fill-color: none;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), transparent);
+  background-repeat: repeat-y;
 
 
   }
